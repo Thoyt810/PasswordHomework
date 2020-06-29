@@ -47,7 +47,7 @@ function writePassword() {
     }
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = passwordArray;
+  passwordText.value = passwordArray.join("");
 
     }}
 
