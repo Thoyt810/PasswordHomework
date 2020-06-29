@@ -40,7 +40,7 @@ function writePassword() {
         else if (specialConfirm === true && numbersConfirm === false && bigConfirm === false) {
             password = some [Math.floor(Math.random() * some.length)]
         }
-        else if (specialConfirm === false && numbersConfirm === false && bigConfirm === false) ;{
+        else (specialConfirm === false && numbersConfirm === false && bigConfirm === false) ;{
             password = lowercase [Math.floor(Math.random() * lowercase.length)]
         }}
   var passwordText = document.querySelector("#password");
