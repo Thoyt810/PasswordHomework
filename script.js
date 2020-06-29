@@ -8,10 +8,10 @@ var bigConfirm = confirm ("Would you like to use upperecase letters in you passw
 var all = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+").split("");
 var most = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789").split("");
 var most1 = ("abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_").split("");
-var most2 = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%^&*()_").split("");
+var most2 = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+").split("");
 var some = ("abcdefghijklmnopqrstuvwxyz!@#$%^&*()_").split("");
 var some1 = ("abcdefghijklmnopqrstuvwxyz1234567890").split("");
-var some2 = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890").split("");
+var some2 = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ").split("");
 var lowercase = ("abcdefghijklmnopqrstuvwxyz").split("");
 var passwordArray = [];
 
