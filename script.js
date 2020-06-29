@@ -13,13 +13,13 @@ var some = ("abcdefghijklmnopqrstuvwxyz!@#$%^&*()_").split("");
 var some1 = ("abcdefghijklmnopqrstuvwxyz1234567890").split("");
 var some2 = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890").split("");
 var lowercase = ("abcdefghijklmnopqrstuvwxyz").split("");
+var passwordArray = [];
 
 function writePassword() {
   var password = generatePassword();
-  function generatePassword(){
-    for (var i = 0; i < 75; i++) {
+  function generatePassword() {
+    for (let i = 0; i < 75; i++) {
         if (specialConfirm === true && numbersConfirm === true && bigConfirm === true ) {
-            console.log(password)
             password = all[Math.floor(Math.random() * all.length)]
         }
         else if (specialConfirm === true && numbersConfirm === true && bigConfirm === false ) {
@@ -32,20 +32,22 @@ function writePassword() {
             password = most[Math.floor(Math.random() * most.length)]
         }
         else if (specialConfirm === false && numbersConfirm === false && bigConfirm === true) {
-            password = some2 [Math.floor(Math.random() * some2.length)]
+            password = some2[Math.floor(Math.random() * some2.length)]
         }
         else if (specialConfirm === false && numbersConfirm === true && bigConfirm === false) {
-            password = some1 [Math.floor(Math.random() * some1.length)]
+            password = some1[Math.floor(Math.random() * some1.length)]
         }
         else if (specialConfirm === true && numbersConfirm === false && bigConfirm === false) {
-            password = some [Math.floor(Math.random() * some.length)]
+            password = some[Math.floor(Math.random() * some.length)]
         }
-        else (specialConfirm === false && numbersConfirm === false && bigConfirm === false) ;{
-            password = lowercase [Math.floor(Math.random() * lowercase.length)]
-        }}
+        else if (specialConfirm === false && numbersConfirm === false && bigConfirm === false) {
+            password = lowercase[Math.floor(Math.random() * lowercase.length)]
+        }
+        passwordArray.push(password);
+    }
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = passwordArray;
 
     }}
 
